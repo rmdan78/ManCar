@@ -1,0 +1,197 @@
+<?php
+
+return [
+    "auth" => [
+        "signIn" => [
+            "title"                 => "Masuk",
+            "username"              => "ID Karyawan / Username",
+            "usernamePlaceholder"   => "Ketik ID atau Username di sini . . .",
+            "password"              => "Kata Sandi",
+            "passwordPlaceholder"   => "*************",
+            "forgotPassword"        => "Lupa kata sandi Anda?",
+            "submit"                => "Kirim",
+        ],
+    ],
+    "dashboard" => [
+        "title" => "Beranda",
+        "completedRequests" => "Pengajuan Selesai",
+        "topUsers" => "Pengguna Teratas",
+        "stats" => [
+            "usersDesc" => "Daftar semua pengguna karyawan saat ini",
+            "vehiclesDesc" => "Daftar semua kendaraan yang didaftarkan",
+            "requestsDesc" => "Daftar semua pengajuan yang direkam",
+        ]
+    ],
+    "requests" => [
+        "title"                 => "Pengajuan",
+        "add"                   => "Tambah",
+        "approve"               => "Setujui",
+        "reject"                => "Tolak",
+        "pending"               => "Tertunda",
+        "editText"              => "Sunting",
+        "complete"              => "Selesaikan",
+        "filter"                => "Filter",
+        "approveTooltip"        => "Setujui yang dicentang",
+        "rejectTooltip"         => "Tolak yang dicentang",
+        "editTooltip"           => "Sunting pengajuan",
+        "completeTooltip"       => "Selesaikan pengajuan",
+        "filterTooltip"         => "Filter data",
+        "approveConfirmation"   => "Kamu yakin untuk menyetujuinya?",
+        "rejectConfirmation"    => "Kamu yakin untuk menolaknya?",
+        "completeConfirmation"  => "Kamu yakin untuk menyelesaikannya?",
+        "status" => [
+            "approved"          => "Disetujui",
+            "rejected"          => "Ditolak",
+            "pending"           => "Tertunda",
+            "ongoing"           => "Berlangsung",
+            "completed"         => "Selesai",
+            "expired"           => "Kadaluwarsa",
+        ],
+        "filterFields" => [
+            "transactionStatus" => "Status Transaksi",
+            "fromDate" => "Dari Tanggal",
+            "untilDate" => "Sampai Tanggal",
+            "perPage" => "Per Halaman",
+            "page" => "Halaman",
+        ],
+        "tableFields" => [
+            "request"           => "Pengajuan",
+            "usageTime"         => "Waktu Penggunaan",
+            "destination"       => "Tujuan",
+            "vehicle"           => "Kendaraan",
+            "status"            => "Status",
+        ],
+        "create" => [
+            "title" => "Tambah Pengajuan Baru",
+            "formFields" => [
+                "destination"               => "Tujuan",
+                "usedOn"                    => "Digunakan Pada",
+                "endsOn"                    => "Selesai Pada",
+                "description"               => "Deskripsi",
+                "destinationPlaceholder"    => "Ketik tujuan di sini . . .",
+                "descriptionPlaceholder"    => "Ketik deskripsi di sini . . .",
+            ],
+        ],
+        "edit" => [
+            "title" => "Sunting Pengajuan",
+            "formFields" => [
+                "destination"               => "Tujuan",
+                "usedOn"                    => "Digunakan Pada",
+                "endsOn"                    => "Selesai Pada",
+                "description"               => "Deskripsi",
+                "destinationPlaceholder"    => "Ketik tujuan di sini . . .",
+                "descriptionPlaceholder"    => "Ketik deskripsi di sini . . .",
+            ],
+        ],
+    ],
+    "vehicles" => [
+        "title"             => "Kendaraan",
+        "add"               => "Tambah",
+        "delete"            => "Hapus",
+        "editText"          => "Sunting",
+        "deleteConfirm"     => "Kamu yakin untuk menghapusnya?",
+        "status" => [
+            "available" => "Tersedia",
+            "inused"    => "Digunakan",
+        ],
+        "create" => [
+            "title" => "Tambah Kendaraan Baru",
+            "formFields" => [
+                "thumbnail"                 => "Thumbnail",
+                "name"                      => "Nama",
+                "boughtOn"                  => "Dibeli Pada",
+                "color"                     => "Warna",
+                "vehicleKind"               => "Tipe Kendaraan",
+                "numberPlate"               => "Plat Nomor",
+                "description"               => "Deskripsi",
+                "descriptionPlaceholder"    => "Ketik deskripsi di sini . . .",
+            ],
+        ],
+        "edit" => [
+            "title" => "Sunting Kendaraan",
+            "formFields" => [
+                "thumbnail"                 => "Thumbnail",
+                "name"                      => "Nama",
+                "boughtOn"                  => "Dibeli Pada",
+                "color"                     => "Warna",
+                "vehicleKind"               => "Tipe Kendaraan",
+                "numberPlate"               => "Plat Nomor",
+                "description"               => "Deskripsi",
+                "descriptionPlaceholder"    => "Ketik deskripsi di sini . . .",
+            ],
+        ],
+    ],
+    "users" => [
+        "title"                 => "Pengguna",
+        "add"                   => "Tambah",
+        "recover"               => "Pulihkan",
+        "disable"               => "Nonaktifkan",
+        "editText"              => "Sunting",
+        "recoverTooltip"        => "Pulihkan yang dicentang",
+        "disableTooltip"        => "Nonaktifkan yang dicentang",
+        "editTooltip"           => "Sunting pengguna",
+        "recoverConfirmation"   => "Kamu yakin untuk memulihkannya?",
+        "disableConfirmation"    => "Kamu yakin untuk menonaktifkannya?",
+        "status" => [
+            "active"    => "Aktif",
+            "inactive"  => "Non-Aktif",
+        ],
+        "tableFields" => [
+            "name"          => "Nama",
+            "roles"         => "Peran",
+            "status"        => "Status",
+        ],
+        "create" => [
+            "title" => "Tambah Pengguna Baru",
+            "formFields" => [
+                "profilePicture"            => "Foto Profil",
+                "name"                      => "Nama",
+                "employeeId"                => "ID Karyawan",
+                "email"                     => "Alamat Email",
+                "roles"                     => "Peran",
+                "password"                  => "Kata Sandi",
+                "passwordWarning"           => "Pengguna harus mengubah kata sandinya setelah login pertama"
+            ],
+        ],
+        "edit" => [
+            "title" => "Sunting Pengguna",
+            "formFields" => [
+                "profilePicture"            => "Foto Profil",
+                "name"                      => "Nama",
+                "employeeId"                => "ID Karyawan",
+                "email"                     => "Alamat Email",
+                "roles"                     => "Peran",
+                "password"                  => "Kata Sandi",
+            ],
+        ],
+    ],
+    "profile" => [
+        "title" => "Profil",
+        "status" => [
+            "active"    => "Aktif",
+            "inactive"  => "Non-Aktif",
+        ],
+        "edit" => [
+            "title" => "Perbarui Profil",
+            "formFields" => [
+                "profilePicture"            => "Foto Profil",
+                "name"                      => "Nama",
+                "employeeId"                => "ID Karyawan",
+                "email"                     => "Alamat Email",
+                "roles"                     => "Peran",
+                "password"                  => "Kata Sandi",
+            ],
+        ],
+        "password" => [
+            "title" => "Kata Sandi",
+            "edit" => [
+                "title" => "Perbarui Kata Sandi",
+                "formFields" => [
+                    "oldPassowrd"       => "Kata Sandi Lama",
+                    "newPassword"       => "Kata Sandi Baru",
+                    "retypeNewPassword" => "Ketik Ulang Kata Sandi Baru",
+                ],
+            ],
+        ],
+    ],
+];

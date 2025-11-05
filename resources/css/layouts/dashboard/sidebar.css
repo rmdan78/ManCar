@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .sidemenu {
+        @apply px-0;
+    }
+
+    .sidemenu li {
+        @apply relative
+            mb-2
+            rounded-xl
+            transition-all
+            duration-300
+            hover:bg-primary-600/10;
+    }
+
+    .sidemenu li > *:not(ul, .menu-title, details, .btn),
+    .sidemenu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+        @apply inline-flex
+            w-full
+            items-center
+            gap-4
+            px-6
+            py-3
+            text-base
+            font-semibold
+            transition-colors
+            duration-150;
+    }
+
+    .sidemenu li > *:not(ul, .menu-title, details, .btn, .active),
+    .sidemenu :where(li:not(.menu-title) > details > summary:not(.menu-title, .active)),
+    .sidemenu li > details > summary {
+        @apply hover:bg-transparent
+            hover:text-black
+            active:bg-transparent
+            dark:hover:text-white;
+    }
+
+    .sidemenu li > *:not(ul, .menu-title, details, .btn).active,
+    .sidemenu :where(li:not(.menu-title) > details > summary:not(.menu-title)).active {
+        @apply relative
+            bg-gradient-primary
+            text-white
+            before:!content-none
+            dark:bg-opacity-70;
+    }
+
+    .sidemenu li > .indicator {
+        @apply hidden;
+    }
+
+    .sidemenu li > *:not(ul, .menu-title, details, .btn).active::before,
+    .sidemenu :where(li:not(.menu-title) > details > summary:not(.menu-title)).active::before {
+        @apply /*
+            */
+            absolute
+            inset-y-0
+            left-0
+            w-1
+            rounded-br-lg rounded-tr-lg bg-purple-600
+            content-[''];
+    }
+}

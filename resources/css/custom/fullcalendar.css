@@ -1,0 +1,194 @@
+/*
+    HEADER TOOLBAR
+*/
+#transactionCalendar .fc-header-toolbar {
+    @apply mb-4
+        grid
+        w-full
+        grid-flow-row
+        grid-cols-12
+        gap-y-2;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk {
+    @apply flex
+        w-full;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+    @apply w-full
+        text-xl
+        text-base-content
+        font-semibold
+        xs:text-2xl;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group button {
+    @apply justify-center
+        text-center;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(1) {
+    @apply col-span-12
+        row-start-2
+        flex
+        w-full
+        justify-center
+        xs:col-span-6
+        xs:justify-start
+        lg:col-span-4
+        lg:col-start-9
+        lg:row-start-1
+        lg:justify-end;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(2) {
+    @apply col-span-12
+        col-start-1
+        row-start-1
+        text-center
+        xs:text-start
+        lg:col-span-4;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) {
+    @apply col-span-12
+        row-start-3
+        flex
+        w-full
+        justify-stretch
+        xs:col-span-6
+        xs:row-start-2
+        xs:justify-end
+        lg:col-span-4
+        lg:col-start-5
+        lg:row-start-1
+        lg:justify-start;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk:nth-child(3) .fc-button-group {
+    @apply w-full
+        xs:w-auto;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-button,
+#transactionCalendar .fc-header-toolbar .fc-prev-button,
+#transactionCalendar .fc-header-toolbar .fc-next-button,
+#transactionCalendar .fc-header-toolbar .fc-button *,
+#transactionCalendar .fc-header-toolbar .fc-prev-button *,
+#transactionCalendar .fc-header-toolbar .fc-next-button * {
+    @apply flex
+        items-center
+        !py-1
+        text-xs
+        lg:text-base;
+}
+
+#transactionCalendar .fc-header-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+    @apply w-full;
+}
+
+/*
+    CONTENT VIEW
+*/
+#transactionCalendar table {
+    @apply rounded-xl
+        border-slate-400/50;
+}
+
+#transactionCalendar table th,
+#transactionCalendar table td {
+    @apply border-slate-400/50;
+}
+
+#transactionCalendar table thead tr th:first-child {
+    @apply rounded-tl-xl;
+}
+
+#transactionCalendar table thead tr th:last-child {
+    @apply rounded-tr-xl;
+}
+
+#transactionCalendar table tbody tr:nth-child(6) td:first-child {
+    @apply rounded-bl-xl;
+}
+
+#transactionCalendar table tbody tr:nth-child(6) td:last-child {
+    @apply rounded-br-xl;
+}
+
+#transactionCalendar table tbody tr:last-child td[role='presentation'] {
+    @apply rounded-b-xl;
+}
+
+#transactionCalendar .fc-scrollgrid-sync-inner {
+    @apply py-3;
+}
+
+#transactionCalendar .fc-view-harness {
+    @apply w-full
+        overflow-auto;
+}
+
+#transactionCalendar .fc-view-harness .fc-view {
+    @apply min-w-[40rem];
+}
+
+#transactionCalendar .fc-scroller {
+    @apply !overflow-x-visible;
+}
+
+#transactionCalendar .fc-daygrid-week-number {
+    @apply rounded-r-md
+        bg-base-100/70
+        text-xs;
+}
+
+#transactionCalendar .fc-day-sat,
+#transactionCalendar .fc-day-sun {
+    @apply bg-red-500/10
+        text-red-500;
+}
+
+#transactionCalendar .fc-day-today .fc-daygrid-day-number {
+    @apply flex
+        size-8
+        items-center
+        justify-center
+        rounded-full
+        bg-slate-400/50;
+}
+
+#transactionCalendar .fc-daygrid-dot-event#transactionCalendar .fc-event-mirror {
+    @apply static
+        z-40
+        overflow-visible
+        backdrop-blur-md;
+}
+
+#transactionCalendar .fc-daygrid-block-event,
+#transactionCalendar .fc-daygrid-dot-event {
+    @apply static
+        px-1
+        transition-all
+        duration-300
+        hover:relative
+        hover:z-40
+        hover:w-52
+        hover:flex-wrap
+        hover:overflow-visible
+        hover:px-2
+        hover:backdrop-blur-sm;
+}
+
+#transactionCalendar .fc-daygrid-dot-event:hover .fc-event-title {
+    @apply text-wrap;
+}
+
+#transactionCalendar .fc-event-time {
+    @apply grow;
+}
+
+#transactionCalendar .fc-event-title {
+    @apply hover:overflow-visible;
+}

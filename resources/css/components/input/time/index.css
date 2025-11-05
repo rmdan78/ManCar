@@ -1,0 +1,92 @@
+.customTimeInput {
+    width: fit-content;
+    padding: 8px;
+    display: flex;
+    position: relative;
+    border: 1px solid #CDCDCD;
+}
+
+.customTimeInput_inputGroup {
+    width: fit-content;
+    margin: 0 -4px;
+    border: 2px solid var(--inactive);
+    display: flex;
+    color: inherit;
+}
+
+.customTimeInput_inputGroup input {
+    width: 22px;
+    height: 22px;
+    margin: 0 4px;
+    padding: auto 2px;
+    color: inherit;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+}
+
+.customTimeInput_inputGroup label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+  /* Chrome, Safari, Edge, Opera */
+.customTimeInput_inputGroup input::-webkit-outer-spin-button,
+.customTimeInput_inputGroup input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+  /* Firefox */
+.customTimeInput_inputGroup input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.customTimeInput_inputGroup,
+.customTimeInput_inputGroup input {
+    font-size: 16px;
+}
+
+.customTimeInput_inputGroup label::before {
+    content: ":";
+    width: auto;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    left: -2px;
+    color: inherit;
+    font-size: 16px;
+}
+
+.customTimeInput_inputGroup label:first-of-type::before {
+    content: '';
+}
+
+.customTimeInput_inputGroup input:focus {
+    outline: 3px solid var(--active);
+}
+
+.customTimeInput_inputGroup input:focus + .label {
+    color: var(--active);
+}
+
+.customTimeInput_inputGroup input.invalid:focus {
+    outline: 3px solid red;
+}
+
+.customTimeInput_inputGroup input.invalid:focus + .label {
+    color: red;
+}
+
+.customTimeInputError {
+    width: 280px;
+    margin: 0 auto;
+    position: relative;
+    top: 170px;
+    color: red;
+    visibility: hidden;
+}
